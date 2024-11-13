@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresencePlus+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">PresencePlus+</h1>
+        <nav class="navbar">
+            <li><a href="index.html">Signup</a></li>
+            <li><a href="dashboard.html">Login</a></li>
+        </nav>
+    </header>
+    <h1>First-Time Registration</h1>
+    <p>Welcome to PresencePlus. We're glad to have you here.</p>
+    <div class="register">
+        <div class="form-title" style="background-image: url(./Eden\ Logo.jpg);">
+            <span class="title-1">
+            Register Here
+            </span>
+            <span class="title-2">
+            Feel free to drop a mesage below!
+            </span>
+        </div>
+        
+        <form class="validate-form">
+            <div class="validate" data-validate="Name is required">
+                <span class="label">Full Name:</span>
+                <input class="input" type="text" name="name" placeholder="Enter full name">
+                <span class="focus"></span>
+            </div>
+            <div class="validate" data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label">Email:</span>
+                <input class="input" type="text" name="email" placeholder="Enter email addess">
+                <span class="focus"></span>
+            </div>
+            <div class="validate" data-validate="Phone is required">
+                <span class="label">Phone:</span>
+                <input class="input" type="text" name="phone" placeholder="Enter phone number">
+                <span class="focus"></span>
+            </div>
+            <div class="validate" data-validate="Message is required">
+                <span class="label">Message:</span>
+                <textarea class="input" name="message" placeholder="Your Comment..."></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="container-form-btn">
+                <button class="form-btn">
+                <span>
+                Submit
+                <i class="fa-sharp fa-solid fa-arrow-right-to-city"></i> 
+                </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
