@@ -7,7 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to your Dashboard</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis optio facilis tenetur error placeat alias, earum hic quos impedit consequatur dolorum corrupti, perferendis fuga odit atque reiciendis nobis temporibus? Excepturi?</p>
+    <header>
+        <h1 class="logo">PresencePlus+</h1>
+        <nav class="navbar">
+            <li><a href="index.html">Signup</a></li>
+            <li><a href="dashboard.html">Login</a></li>
+        </nav>
+    </header>
+    <div class="register">
+        <div class="form-title" style="background-image: url(./Eden\ Logo.jpg);">
+            <span class="title-1">
+            Check in
+            </span>
+            <span class="title-2">
+            Login to your dashboard here!
+            </span>
+        </div>
+        
+        <form class="validate-form">
+            <!-- <div class="validate" data-validate="Name is required">
+                <span class="label">Full Name:</span>
+                <input class="input" type="text" name="name" placeholder="Enter full name">
+                <span class="focus"></span>
+            </div> -->
+            <!-- <div class="validate" data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label">Email:</span>
+                <input class="input" type="text" name="email" placeholder="Enter email addess">
+                <span class="focus"></span>
+            </div> -->
+            <div class="validate" data-validate="Phone is required">
+                <span class="label">Phone:</span>
+                <input class="input" type="text" name="phone" placeholder="Enter phone number">
+                <span class="focus"></span>
+            </div>
+            <div class="container-form-btn">
+                <button class="form-btn">
+                <span>
+                Check in
+                <i class="fa-sharp fa-solid fa-arrow-right-to-city"></i> 
+                </span>
+                </button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
