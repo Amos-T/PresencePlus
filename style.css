@@ -214,7 +214,7 @@ a{
 @media screen and (max-width: 500px){
     .validate-form{
         width: 300px;
-        padding: 40px 80px 50px 120px;
+        padding: 40px 80px 50px 70px;
     }
 
     .validate{
