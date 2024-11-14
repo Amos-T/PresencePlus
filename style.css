@@ -210,3 +210,22 @@ a{
     text-decoration: none;
     color: black;
 }
+
+@media screen and (max-width: 500px){
+    .validate-form{
+        width: 300px;
+        padding: 40px 80px 50px 120px;
+    }
+
+    .validate{
+        width: 150px
+    }
+
+    .label{
+        padding: 0;
+        margin: 0;
+    }
+    .input{
+        padding: 0;
+    }
+}
