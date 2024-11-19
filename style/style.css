@@ -98,6 +98,7 @@ a{
 
 .form-title{
     width: 100%;
+    height: 80px;
     position: relative;
     z-index: 1;
     display: flex;

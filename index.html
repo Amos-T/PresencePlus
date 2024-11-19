@@ -28,27 +28,27 @@
     <marquee><h1>First-Time Registration</h1></marquee>
     <div class="register">
         <div class="form-title" style="background-image: url(./images/Eden\ Logo.jpg);">
-            <span class="title-1">
+            <!-- <span class="title-1">
             Register Here
             </span>
             <span class="title-2">
             Feel free to drop a mesage below!
-            </span>
+            </span> -->
         </div>
         
         <form class="validate-form" netlify>
             <div class="validate" data-validate="Name is required">
-                <span class="label">Full Name:</span>
+                <span class="label" class="name">Full Name:</span>
                 <input class="input" type="text" name="name" placeholder="Enter full name">
                 <span class="focus"></span>
             </div>
             <div class="validate" data-validate="Valid email is required: ex@abc.xyz">
-                <span class="label">Email:</span>
+                <span class="label" class="email">Email:</span>
                 <input class="input" type="text" name="email" placeholder="Enter email addess">
                 <span class="focus"></span>
             </div>
             <div class="validate" data-validate="Phone is required">
-                <span class="label">Phone:</span>
+                <span class="label" class="number">Phone:</span>
                 <input class="input" type="text" name="phone" placeholder="Enter phone number">
                 <span class="focus"></span>
             </div>
@@ -61,12 +61,13 @@
                 <button class="form-btn">
                 <span class="bi">
                 Register
-                <!-- <i class="fa-sharp fa-solid fa-arrow-right-to-city"></i> -->
                 <i class="bi bi-box-arrow-in-right"></i> 
                 </span>
                 </button>
             </div>
         </form>
     </div>
+
+    <script src="form.js"></script>
 </body>
 </html>
