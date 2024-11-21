@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         phone: function(value) {
             // Validate phone number (10 digits, optional formatting)
-            return /^(\+\d{1,2}\s?)?(\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$/.test(value.trim());
+            return /^0\d{10}$/.test(value.replace(/[\s.-]/g, ''));
         },
         message: function(value) {
             // Require at least 10 characters

@@ -14,10 +14,10 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">PresencePlus+</h1>
+        <h1 class="logo"><a href="index.html">PresencePlus+</a></h1>
         <nav class="navbar">
-            <li><a href="index.html">Signup / Register</a></li>
-            <li><a href="dashboard.html">Check in</a></li>
+            <li><a href="index.html">Signup / Register <i class="bi bi-database-fill-add"></i></a></li>
+            <li><a href="checkin.html">Check in <i class="bi bi-person-check-fill"></i></a></li>
         </nav>
     </header>
     <div class="register">
@@ -31,16 +31,6 @@
         </div>
         
         <form class="validate-form" id="userForm">
-            <!-- <div class="validate" data-validate="Name is required">
-                <span class="label">Full Name:</span>
-                <input class="input" type="text" name="name" placeholder="Enter full name">
-                <span class="focus"></span>
-            </div> -->
-            <!-- <div class="validate" data-validate="Valid email is required: ex@abc.xyz">
-                <span class="label">Email:</span>
-                <input class="input" type="text" name="email" placeholder="Enter email addess">
-                <span class="focus"></span>
-            </div> -->
             <div class="validate" data-validate="Phone is required">
                 <span class="label">Phone:</span>
                 <input class="input" type="text" name="phone" placeholder="Enter phone number">
@@ -56,5 +46,6 @@
             </div>
         </form>
     </div>
+    <script src="checkin.js"></script>
 </body>
 </html>
