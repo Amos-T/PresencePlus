@@ -36,31 +36,31 @@
             </span> -->
         </div>
         
-        <form class="validate-form" netlify>
-            <div class="validate" data-validate="Name is required">
-                <span class="label" class="name">Full Name:</span>
+        <form class="validate-form">
+            <div class="validate" data-validate="Name is required" >
+                <span class="label" class="name" id="FormData">Full Name:</span>
                 <input class="input" type="text" name="name" placeholder="Enter full name">
                 <span class="focus"></span>
             </div>
             <div class="validate" data-validate="Valid email is required: ex@abc.xyz">
-                <span class="label" class="email">Email:</span>
+                <span class="label" class="email" id="FormData">Email:</span>
                 <input class="input" type="text" name="email" placeholder="Enter email addess">
                 <span class="focus"></span>
             </div>
             <div class="validate" data-validate="Phone is required">
-                <span class="label" class="number">Phone:</span>
+                <span class="label" class="number" id="FormData">Phone:</span>
                 <input class="input" type="text" name="phone" placeholder="Enter phone number">
                 <span class="focus"></span>
             </div>
-            <div class="validate" data-validate="Message is required">
-                <span class="label">Message:</span>
+            <div class="validate" data-validate="Message is required" >
+                <span class="label" id="FormData">Message:</span>
                 <textarea class="input" name="message" placeholder="Your Comment..."></textarea>
                 <span class="focus"></span>
             </div>
             <div class="container-form-btn">
-                <button class="form-btn">
+                <button class="form-btn" id="submit-form">
                 <span class="bi">
-                Register
+                <a href="dashboard.html">Register</a>
                 <i class="bi bi-box-arrow-in-right"></i> 
                 </span>
                 </button>
