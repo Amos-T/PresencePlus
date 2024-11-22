@@ -1,17 +1,20 @@
 // checkinAPI.js
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('userForm');
-    const phoneInput = document.querySelector('input[name="phone"]');
+    const emailInput = document.querySelector('input[name="email"]');
+    const nameInput = document.querySelector('input[name="name"]');
     const checkInButton = document.querySelector('.form-btn');
   
     const AZURE_LOGIC_APP_ENDPOINT = 'https://prod-11.southafricanorth.logic.azure.com/workflows/23979598b6cb4941aab30fc246538dc9/triggers/manual/paths/invoke/NotifyByMail?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=LzXmBL6mNFDZ3ys-RFkL3W8kDGjzB37smmlYUTxJWGo';
   
     checkInButton.addEventListener('click', async (e) => {
       e.preventDefault();
-      const phone = phoneInput.value.trim();
+    //   const phone = phoneInput.value.trim();
+      const name= nameInput.value.trim();
+      const email = emailInput.value.trim();
   
-      if (!phone) {
-        alert('Phone number is required');
+      if (!email) {
+        alert('Email is required');
         return;
       }
   
@@ -23,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({ 
-            message: phone, 
-            name: 'Amos', 
-            email: 'Amos@edeen.inc' 
+            message: 
+            name, 
+            email
           })
         });
   
