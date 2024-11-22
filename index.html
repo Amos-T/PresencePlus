@@ -15,15 +15,15 @@
     <header>
         <h1 class="logo"><a href="index.html">PresencePlus+</a></h1>
         <nav class="navbar">
-            <li><a href="index.html">Signup / Register <i class="bi bi-database-fill-add"></i></a></li>
+            <!-- <li><a href="index.html">Signup / Register <i class="bi bi-database-fill-add"></i></a></li> -->
             <li><a href="checkin.html">Check in <i class="bi bi-person-check-fill"></i></a></li>
         </nav>
     </header>
     <p>Welcome to PresencePlus. We're glad to have you here.</p>
-    <div>
+    <!-- <div>
         <div class="about">
             <h3>This MVP solution allows church members to self-register for the first time and check in during subsequent services using their phone number or email. The admin team will have access to a detailed database with attendance records and a dashboard to track who has attended or missed church over a specific period.</h3>
-        </div>
+        </div> -->
     </div>
     <marquee><h1>First-Time Registration</h1></marquee>
     <div class="register">
@@ -48,15 +48,20 @@
                 <span class="focus"></span>
             </div>
             <div class="validate" data-validate="Phone is required">
-                <span class="label" class="number" id="FormData">Phone:</span>
+                <span class="label" class="phone" id="FormData">Phone:</span>
+                <input class="input" type="number" name="phone" placeholder="Enter phone number">
+                <span class="focus"></span>
+            </div>
+            <div class="validate" data-validate="Address is required">
+                <span class="label" class="text" id="FormData">Address:</span>
                 <input class="input" type="text" name="phone" placeholder="Enter phone number">
                 <span class="focus"></span>
             </div>
-            <div class="validate" data-validate="Message is required" >
+            <!-- <div class="validate" data-validate="Message is required" >
                 <span class="label" id="FormData">Message:</span>
                 <textarea class="input" name="message" placeholder="Your Comment..."></textarea>
                 <span class="focus"></span>
-            </div>
+            </div> -->
             <div class="container-form-btn">
                 <button class="form-btn" id="submit-form">
                 <span class="bi">
