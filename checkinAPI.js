@@ -101,7 +101,7 @@
 const form = document.getElementById('userForm');
 
 // Replace with your deployed Google Apps Script URL
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwCE6X8UC-NH_JQSOu4zryvcNNf_KaPA3y1GUCxmqYWgyTHz7BDbFkIJryQ959eNPk/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzwawvPKT4vD1ZaOkbD35hMPDqwE1XkefuFJzc9tRMb6OVbkDFpIK5GOV7own-F9h5K/exec';
 
 form.addEventListener('submit', e => {
     e.preventDefault();
